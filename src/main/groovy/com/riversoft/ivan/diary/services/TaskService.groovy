@@ -13,8 +13,8 @@ class TaskService {
         tasksRepository.findAll().asList()
     }
 
-    def findTaskById(Long id){
-        tasksRepository.find {it.id == id}
+    def getTaskById(Long id) {
+        tasksRepository.findById(id) ?: "No task with ID ${id}"
     }
 
 }

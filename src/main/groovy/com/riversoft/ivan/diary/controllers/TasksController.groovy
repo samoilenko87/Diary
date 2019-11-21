@@ -24,6 +24,6 @@ class TasksController {
     }
     @GetMapping('{id}')
     def findTask(@PathVariable long id) {
-        taskService.findTaskById(id)
+        taskService.getTaskById(id)
     }
 }

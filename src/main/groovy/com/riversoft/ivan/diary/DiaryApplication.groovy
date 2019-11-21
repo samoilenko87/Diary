@@ -10,4 +10,5 @@ class DiaryApplication {
         SpringApplication.run(DiaryApplication, args)
     }
 
+
 }
